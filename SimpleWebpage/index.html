@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+    <style>
+      * {
+        font-family: system-ui, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+          "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        margin: 0 80px;
+        background-color: white;
+      }
+
+      .heading {
+        text-align: center;
+        font-style: italic;
+      }
+
+      .sectionContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        position: relative;
+        top: 20px;
+        align-items: center;
+      }
+
+      #para {
+        font-size: large;
+      }
+
+      #img {
+        max-width: 400px;
+        height: 400px;
+      }
+
+      footer {
+        position: relative;
+        top: 20px;
+        text-align: center;
+      }
+
+      footer img {
+        height: 80px;
+        max-width: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="headingContainer">
+        <div class="heading">
+          <h1>Cognifyz Technologies</h1>
+          <h4>Where Data Meets Intelligence</h4>
+        </div>
+      </header>
+      <section class="sectionContainer">
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nihil
+          esse exercitationem error tenetur reiciendis distinctio modi fugiat
+          neque in pariatur corrupti hic numquam quaerat suscipit magnam aperiam
+          maiores, quos fugit. Explicabo adipisci incidunt commodi ipsam eaque
+          obcaecati, laudantium atque distinctio illum, tempora quae eius,
+          corporis labore. Fuga, tenetur nostrum?
+        </p>
+        <img src="image.svg" alt="img" id="img" />
+      </section>
+      <br /><br />
+      <hr />
+      <hr />
+      <footer>
+        <address>
+          <h2>Contact :</h2>
+          <a href="mailto:manikandan2582002@gmail.com">
+            <img src="gmail.svg" alt="manikandan2582002@gmail.com" />
+          </a>
+        </address>
+      </footer>
+    </main>
+  </body>
+</html>
