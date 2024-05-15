@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(245, 245, 245);
+      }
+      .login-container {
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.082);
+        width: 350px;
+        overflow: hidden;
+      }
+      .login-header {
+        background-color: rgb(165, 11, 236);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .login-header h2 {
+        margin: 0;
+      }
+      .login-form {
+        padding: 20px;
+      }
+      .form-input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #e7e7e7;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-input:focus {
+        background-color: rgb(208, 208, 208);
+        outline: none;
+        scale: 1.05;
+        transition: all 0.3s;
+      }
+      .form-submit {
+        width: 100%;
+        padding: 10px;
+        font-size: large;
+        font-weight: bold;
+        border: 1px solid rgb(165, 11, 236);
+        border-radius: 5px;
+        background-color: white;
+        color: rgb(165, 11, 236);
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .form-submit:hover {
+        background-color: rgb(165, 11, 236);
+        color: white;
+      }
+      .login-footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+      .login-footer a {
+        text-decoration: none;
+        color: rgb(165, 11, 236);
+      }
+      .login-footer a:hover{
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-header">
+        <h2>Sign-in</h2>
+      </div>
+      <div class="login-form">
+        <form action="#">
+          <input type="text" class="form-input" placeholder="Username" required />
+          <input type="password" class="form-input" placeholder="Password" required />
+          <input type="submit" class="form-submit" value="Login" required />
+        </form>
+      </div>
+      <div class="login-footer">
+        <p>Don't have an account? <a href="#">Sign-Up</a></p>
+      </div>
+    </div>
+  </body>
+</html>
