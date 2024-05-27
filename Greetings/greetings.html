@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <script>
+        var getHours = new Date().getHours();
+        var greeting;
+
+        if (getHours<12 && getHours >5){
+            greeting  = "Good morning! Have a Great day"
+        }
+        else if (getHours>12 && getHours<16){
+            greeting = "Good afternoon! Don't forget to have your Lunch"
+        }
+        else if(getHours>16 && getHours<19){
+            greeting = "Goood evening! Have a cup of Tea/Coffee"
+        }
+        else{
+            greeting = "Good night! Sweat Dreams"
+        }
+
+        alert(greeting)
+    </script>
+</head>
+<body>
+    <h3>This greeting was given appropriately for the current time</h3>
+</body>
+</html>
